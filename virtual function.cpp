@@ -1,35 +1,32 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class base{
 public:
-    virtual void Msg(){cout<<"\'Msg()\' from \'base\' class" <<endl;}
-    void NonVirtual(){cout<<"\'NonVirtual()\' from \'base\' class" <<endl;}
+    virtual void Msg(){cout<<"This is from base class."<<endl;}
+    void NonVirtual(){cout<<"This is Non virtual from base class."<<endl;}
 };
 
 class derived1 : public base{
 public:
-    void Msg(){cout<<"\'Msg()\' from \'derived1\' class" <<endl;}
-    void NonVirtual(){cout<<"\'NonVirtual()\' from \'derived1\' class" <<endl;}
+    void Msg(){cout<<"This is from derived1."<<endl;}
+    void NonVirtual(){cout<<"This is Non virtual from derived1."<<endl;}
 };
 
 class derived2 : public base{
-    //no override function
 };
 
-int main(void)
+int main()
 {
     base *baseptr;
     derived1 d1;
     derived2 d2;
 
     baseptr = &d1;
-    baseptr-> Msg();
-    baseptr-> NonVirtual();
-
-    cout<<endl;
+    baseptr->Msg();
+    baseptr->NonVirtual();
 
     baseptr = &d2;
-    baseptr-> Msg();
-    baseptr-> NonVirtual();
+    baseptr->Msg();
+    baseptr->NonVirtual();
 }
