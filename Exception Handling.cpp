@@ -26,6 +26,7 @@ int main()
 
     return 0;
 }
+
 /* OUTPUT:
 Division by zero condition!
 */
