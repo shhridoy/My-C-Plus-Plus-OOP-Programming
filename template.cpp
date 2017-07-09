@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 
-/*template <class DataType> DataType Add(DataType a, DataType b)
+/*
+template <class DataType> DataType Add(DataType a, DataType b)
 {
     return (a+b);
 }
@@ -16,6 +17,10 @@ int main(void)
 
     cout<< "iResult: " << iResult <<endl;
     cout<< "dResult: " << dResult <<endl;
+    
+    OUTPUT:
+    iResult: 8
+    dResult: 8.8
 */
 
 template <class DataType> DataType Sum(DataType elements[], int size)
@@ -37,3 +42,9 @@ int main(void)
     cout<< "Sum of UnitPrice = " << Sum(UnitPrice, 4) <<endl;
     cout<< "Sum of Units = " << Sum(Unit, 4) <<endl;
 }
+
+/* OUTPUT:
+Sum of Scores = 290
+Sum of UnitPrice = 292.9
+Sum of Units = 120
+*/
