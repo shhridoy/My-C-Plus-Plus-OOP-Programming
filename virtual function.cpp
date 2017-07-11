@@ -30,3 +30,10 @@ int main()
     baseptr->Msg();
     baseptr->NonVirtual();
 }
+
+/* OUTPUT:
+This is from derived1.
+This is Non virtual from base class.
+This is from base class.
+This is Non virtual from base class.
+*/
