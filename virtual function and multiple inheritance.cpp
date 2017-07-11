@@ -41,3 +41,4 @@ Message from derived1.
 Message from derived2.
 Message from derived2.
 */
+
