@@ -46,3 +46,16 @@ int main( )
     display(line2);
     return 0;
 }
+
+/* OUTPUT:
+Normal constructor allocating ptr
+Copy constructor allocating ptr.
+Copy constructor allocating ptr.
+Length of line : 10
+Freeing memory!
+Copy constructor allocating ptr.
+Length of line : 10
+Freeing memory!
+Freeing memory!
+Freeing memory!
+*/
