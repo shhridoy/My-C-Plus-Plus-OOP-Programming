@@ -35,3 +35,9 @@ int main()
     baseptr = &d3;
     baseptr->Msg();
 }
+
+/* OUTPUT:
+Message from derived1.
+Message from derived2.
+Message from derived2.
+*/
